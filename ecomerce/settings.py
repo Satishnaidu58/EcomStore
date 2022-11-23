@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)kh!hvzra=a1hb(eh00r+o8if)dtr0l#@0p^vhd4p_r(dtrg7k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://ecom-app-django.herokuapp.com/', '127.0.0.1:8000/']
+ALLOWED_HOSTS = ['ecom-app-django.herokuapp.com/', '127.0.0.1:8000/']
 
 
 # Application definition
@@ -128,13 +128,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static')
+# ]
 
 MEDIA_URL = '/images/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles/images')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
