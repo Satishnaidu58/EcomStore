@@ -11,12 +11,16 @@
   - Heroku
   - WhiteNoise
   
-## Descriptio
+## Description 
 
 
 ## Screan shoots 
 
+###Store
 ![Screenshot from 2022-11-23 23-35-57](https://user-images.githubusercontent.com/88018904/203619913-96efa3e9-ec17-4e31-989c-6029ea2b51e0.png)
+###Cart
 ![Screenshot from 2022-11-23 23-36-12](https://user-images.githubusercontent.com/88018904/203619930-ac08ca7d-0dc7-4e78-84b7-1d92fbd27793.png)
+###Checkout
 ![Screenshot from 2022-11-23 23-36-23](https://user-images.githubusercontent.com/88018904/203619931-78bd8f3c-6856-4222-97c2-5591028727ee.png)
+###PayPalPayment Intigration
 ![Screenshot from 2022-11-23 23-36-41](https://user-images.githubusercontent.com/88018904/203619933-3e3936f9-3145-4cf9-91a0-e3738488dfbe.png)
