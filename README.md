@@ -13,6 +13,7 @@
   
 ## Description 
 
+Can buy digital and Physical products like "Source Code" and "HeadPhones" buy logging-in, as well as guest login and checkout. Made payments transation with Razorpay sanbox api.
 
 ## Screan shoots 
 
