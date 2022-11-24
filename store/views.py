@@ -12,7 +12,6 @@ def store(request):
      cartItems = data['cartItems']
      products = Product.objects.all()
      context = {'products':products, 'cartItems':cartItems}
-     print(products[0].imageURL)
      return render(request, 'store/store.html', context)
 
 def cart(request):
