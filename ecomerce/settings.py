@@ -19,29 +19,20 @@ from django.test.runner import DiscoverRunner
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-IS_HEROKU = "DYNO" in os.environ
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # protecting it
-# SECRET_KEY = 'django-insecure-)kh!hvzra=a1hb(eh00r+o8if)dtr0l#@0p^vhd4p_r(dtrg7k'
-
-if 'SECRET_KEY' in os.environ:
-    SECRET_KEY = os.environ["SECRET_KEY"]
+SECRET_KEY = 'django-insecure-)kh!hvzra=a1hb(eh00r+o8if)dtr0l#@0p^vhd4p_r(dtrg7k'
     
 # SECURITY WARNING: don't run with debug turned on in production!
-if IS_HEROKU:
-    ALLOWED_HOSTS = ["*"]
-else:
-    ALLOWED_HOSTS = []
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU:
-    DEBUG = True
 
-# ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+DEBUG = False
+
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
