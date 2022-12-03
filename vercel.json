@@ -21,7 +21,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "ecomercewsgi.py"
+            "dest": "ecomerce/wsgi.py"
         }
     ]
 }
