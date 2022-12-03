@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-)kh!hvzra=a1hb(eh00r+o8if)dtr0l#@0p^vhd4p_r(dtrg7k
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
@@ -45,11 +45,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'debug_toolbar',
     
     'store.apps.StoreConfig',
 ]
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.security.SecurityMiddleware',
     
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -143,6 +145,8 @@ MEDIA_URL = '/images/'
 MEDIA_ROOT = BASE_DIR/ 'static/images'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+INTERNAL_IPS = ['127.0.0.1',]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
